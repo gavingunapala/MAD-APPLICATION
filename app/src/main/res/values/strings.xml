@@ -14,4 +14,16 @@
     <string name="update">UPDATE</string>
     <string name="delete">DELETE</string>
     <string name="submit">SUBMIT</string>
+    
+    //signin
+    <string name="signin">SIGN-IN</string>
+    <string name="home">HOME</string>
+    <string name="cancel">CANCEL</string>
+    <string name="create">CREATE ACCOUNT</string>
+    
+    //user profile
+    
+    <string name="title">USER PROFILE</string>
+    <string name="changepropic">CHANGE PROFILE PICTURE</string>
+    <string name="deleteAccount">DELETE ACCOUNT</string>
 </resources>
