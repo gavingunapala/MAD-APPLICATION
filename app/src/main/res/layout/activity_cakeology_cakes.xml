@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CakeologyCakes">
+
+    <EditText
+        android:id="@+id/editTextTextPersonName18"
+        android:layout_width="81dp"
+        android:layout_height="52dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Quantity"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        tools:layout_editor_absoluteX="229dp"
+        tools:layout_editor_absoluteY="310dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName19"
+        android:layout_width="179dp"
+        android:layout_height="51dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Product Description"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="600dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName20"
+        android:layout_width="402dp"
+        android:layout_height="66dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:fontFamily="@font/courgette"
+        android:inputType="textPersonName"
+        android:text="From one of the most loved Chocolate-Timtam......."
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="635dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName11"
+        android:layout_width="200dp"
+        android:layout_height="57dp"
+        android:background="#C1F18A"
+        android:ems="10"
+        android:fontFamily="@font/bilbo_swash_caps"
+        android:inputType="textPersonName"
+        android:text="  Cakeology Cakes"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="28dp" />
+
+    <ImageView
+        android:id="@+id/imageView30"
+        android:layout_width="211dp"
+        android:layout_height="206dp"
+        app:srcCompat="@drawable/cake1"
+        tools:layout_editor_absoluteX="-4dp"
+        tools:layout_editor_absoluteY="136dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName14"
+        android:layout_width="210dp"
+        android:layout_height="52dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Chocolate Dripped  Cake"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        tools:layout_editor_absoluteX="208dp"
+        tools:layout_editor_absoluteY="123dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName16"
+        android:layout_width="125dp"
+        android:layout_height="48dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Rs. 1800"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        tools:layout_editor_absoluteX="229dp"
+        tools:layout_editor_absoluteY="190dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName17"
+        android:layout_width="103dp"
+        android:layout_height="46dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="1 kg"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        tools:layout_editor_absoluteX="229dp"
+        tools:layout_editor_absoluteY="249dp" />
+
+    <RatingBar
+        android:id="@+id/ratingBar2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        tools:layout_editor_absoluteX="354dp"
+        tools:layout_editor_absoluteY="190dp" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="133dp"
+        android:layout_height="42dp"
+        android:background="#CACDCF"
+        android:text="  -         +"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        tools:layout_editor_absoluteX="229dp"
+        tools:layout_editor_absoluteY="362dp" />
+
+    <ImageView
+        android:id="@+id/imageView31"
+        android:layout_width="121dp"
+        android:layout_height="102dp"
+        app:srcCompat="@drawable/img1"
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="351dp" />
+
+    <ImageView
+        android:id="@+id/imageView32"
+        android:layout_width="102dp"
+        android:layout_height="101dp"
+        app:srcCompat="@drawable/omg2"
+        tools:layout_editor_absoluteX="106dp"
+        tools:layout_editor_absoluteY="351dp" />
+
+    <ImageView
+        android:id="@+id/imageView33"
+        android:layout_width="106dp"
+        android:layout_height="78dp"
+        app:srcCompat="@drawable/img3"
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="460dp" />
+
+    <Button
+        android:id="@+id/button19"
+        android:layout_width="128dp"
+        android:layout_height="43dp"
+        android:background="#1D7C7171"
+        android:text="Add to cart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="538dp" />
+
+    <Button
+        android:id="@+id/button20"
+        android:layout_width="128dp"
+        android:layout_height="43dp"
+        android:background="#ACE46A"
+        android:text="Buy Now"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        tools:layout_editor_absoluteX="226dp"
+        tools:layout_editor_absoluteY="538dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

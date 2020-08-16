@@ -9,12 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".signIn">
-
-        </activity>
-        <activity android:name=".UserProfile">
-
-        </activity>
+        <activity android:name=".CakeologyCakes"></activity>
+        <activity android:name=".Home" />
+        <activity android:name=".AddDetails" />
+        <activity android:name=".AddItems" />
+        <activity android:name=".signIn" />
+        <activity android:name=".UserProfile" />
         <activity android:name=".Payment" />
         <activity android:name=".Checkout" />
         <activity android:name=".Addtocart" />
@@ -26,6 +26,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
