@@ -17,10 +17,9 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.567"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.106" />
+        app:layout_constraintVertical_bias="0.101" />
 
     <TextView
         android:id="@+id/textView30"
@@ -65,10 +64,13 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="126dp"
-        android:layout_height="199dp"
-        app:srcCompat="@drawable/logo"
-        tools:layout_editor_absoluteX="277dp"
-        tools:layout_editor_absoluteY="8dp" />
+        android:layout_width="111dp"
+        android:layout_height="176dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.946"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

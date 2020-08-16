@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">MAD-PROJECT</string>
+
+    //login
+    <string name="username">USERNAME</string>
+    <string name="password">PASSWORD</string>
+    <string name="login">LOG-IN</string>
+    <string name="createAccount">CREATE ACCOUNT</string>
+
+    //feedback
+    <string name="feed">WRITE YOUR FEEDBACK</string>
+    <string name="rating">ratings</string>
+    <string name="email">E-MAIL</string>
+    <string name="update">UPDATE</string>
+    <string name="delete">DELETE</string>
+    <string name="submit">SUBMIT</string>
 </resources>
