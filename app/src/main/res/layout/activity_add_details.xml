@@ -45,7 +45,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="#DDD58B"
-        android:text="Add Details"
+        android:text="@string/myadminpage2"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         tools:layout_editor_absoluteX="119dp"
         tools:layout_editor_absoluteY="50dp" />
@@ -269,7 +269,7 @@
         android:id="@+id/button5"
         android:layout_width="114dp"
         android:layout_height="58dp"
-        android:text="Save"
+        android:text="@string/savebutton"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         tools:layout_editor_absoluteX="146dp"
         tools:layout_editor_absoluteY="614dp" />

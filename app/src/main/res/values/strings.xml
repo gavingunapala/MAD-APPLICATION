@@ -26,4 +26,30 @@
     <string name="title">USER PROFILE</string>
     <string name="changepropic">CHANGE PROFILE PICTURE</string>
     <string name="deleteAccount">DELETE ACCOUNT</string>
+
+    //Home
+
+    <string name="topic">HOME TOPIC</string>
+    <string name="addtocart">ADD TO CART</string>
+    <string name="dropdowntoselect">CATEGORIES</string>
+
+    //Cakeology cakes
+
+    <string name="quantity">ADD QUANTITY</string>
+    <string name="buybutton">BUY NOW</string>
+    <string name="addtocartbutton">Add to Cart Now</string>
+
+    //Add Items
+
+    <string name="myadminpage1">ADD ITEMS</string>
+    <string name="addbutton">Add Cake</string>
+    <string name="backbutton">My Profile</string>
+    <string name="forwardbutton">FEEDBACK</string>
+
+    //Add Details
+
+    <string name="myadminpage2">Add Cake Details</string>
+    <string name="savebutton">SAVE DETAILS</string>
+
+
 </resources>

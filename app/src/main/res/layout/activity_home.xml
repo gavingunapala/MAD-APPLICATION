@@ -16,7 +16,7 @@
         android:ems="10"
         android:fontFamily="@font/bilbo_swash_caps"
         android:inputType="textPersonName"
-        android:text="Cakes for Every Festivity"
+        android:text="@string/topic"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         tools:layout_editor_absoluteX="125dp"
         tools:layout_editor_absoluteY="189dp" />
@@ -42,7 +42,7 @@
         android:id="@+id/textView33"
         android:layout_width="87dp"
         android:layout_height="22dp"
-        android:text="Select"
+        android:text="@string/dropdowntoselect"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         tools:layout_editor_absoluteX="31dp"
         tools:layout_editor_absoluteY="247dp" />
@@ -111,7 +111,7 @@
         android:id="@+id/button13"
         android:layout_width="117dp"
         android:layout_height="41dp"
-        android:text="Add to Cart"
+        android:text="@string/addtocart"
         tools:layout_editor_absoluteX="88dp"
         tools:layout_editor_absoluteY="509dp" />
 

@@ -70,7 +70,7 @@
     <TextView
         android:layout_width="171dp"
         android:layout_height="68dp"
-        android:text="Add Cakes"
+        android:text="@string/myadminpage1"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         tools:layout_editor_absoluteX="120dp"
         tools:layout_editor_absoluteY="65dp" />
@@ -102,7 +102,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="#8BC34A"
-        android:text="Add"
+        android:text="@string/addbutton"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         tools:layout_editor_absoluteX="216dp"
         tools:layout_editor_absoluteY="194dp" />
@@ -170,7 +170,7 @@
         android:layout_width="67dp"
         android:layout_height="56dp"
         android:background="#DDD58B"
-        android:text="<"
+        android:text="@string/backbutton"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="609dp" />
@@ -180,7 +180,7 @@
         android:layout_width="67dp"
         android:layout_height="56dp"
         android:background="#DDD58B"
-        android:text=">"
+        android:text="@string/forwardbutton"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
         tools:layout_editor_absoluteX="303dp"
         tools:layout_editor_absoluteY="606dp" />

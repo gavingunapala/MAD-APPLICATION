@@ -13,7 +13,7 @@
         android:background="#FFFFFF"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Quantity"
+        android:text="@string/quantity"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         tools:layout_editor_absoluteX="229dp"
         tools:layout_editor_absoluteY="310dp" />
@@ -146,7 +146,7 @@
         android:layout_width="128dp"
         android:layout_height="43dp"
         android:background="#1D7C7171"
-        android:text="Add to cart"
+        android:text="@string/addtocartbutton"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         tools:layout_editor_absoluteX="59dp"
         tools:layout_editor_absoluteY="538dp" />
@@ -156,7 +156,7 @@
         android:layout_width="128dp"
         android:layout_height="43dp"
         android:background="#ACE46A"
-        android:text="Buy Now"
+        android:text="@string/buybutton"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         tools:layout_editor_absoluteX="226dp"
         tools:layout_editor_absoluteY="538dp" />
