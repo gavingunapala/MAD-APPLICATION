@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#EAE6E6"
+    android:background="@drawable/bg_login"
     tools:context=".feedback">
 
     <ImageView
@@ -25,6 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="256dp"
+        android:background="@color/tr_button2"
         android:shadowColor="#F32F2F"
         android:text="@string/submit"
         android:textColor="#FFFFFF"
@@ -38,6 +39,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
+        android:background="@color/tr_button1"
         android:text="@string/delete"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -48,6 +50,7 @@
         android:id="@+id/updatefeed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@color/tr_button1"
         android:layout_marginBottom="16dp"
         android:text="@string/update"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -61,7 +64,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="304dp"
         android:text="FEED BACK"
-        android:textColor="#000000"
+        android:textColor="#404952"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.062"
@@ -82,6 +85,7 @@
         android:id="@+id/rating"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="#345E54 "
         android:layout_marginTop="188dp"
         android:text="@string/rating"
         android:textSize="18sp"
@@ -95,6 +99,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="352dp"
+        android:textColor="#345E54 "
         android:text="@string/feed"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -115,6 +120,7 @@
         android:id="@+id/email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="#345E54 "
         android:layout_marginTop="272dp"
         android:text="@string/email"
         android:textSize="18sp"
@@ -127,13 +133,14 @@
         android:id="@+id/editTextTextEmailAddress"
         android:layout_width="240dp"
         android:layout_height="38dp"
-        android:layout_marginTop="28dp"
+        android:background="#44ffffff"
         android:ems="10"
+        android:hint="123@mail.com"
         android:inputType="textEmailAddress"
+        app:layout_constraintBaseline_toBaselineOf="@+id/email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.906"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/editTextTextMultiLine"

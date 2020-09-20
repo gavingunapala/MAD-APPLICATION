@@ -3,8 +3,16 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
+    <color name="ash">#7B865B </color>
+    <color name="ash2">#FF9200 </color>
 
-<color name="log_form">#ccffffff</color>
-    <color name="login_button">#66ffffff</color>
+
+
+
+    <color name="tr_button1">#ccffffff</color>
+    <color name="tr_button2">#66ffffff</color>
+    <color name="tr_button3">#55ffffff</color>
+    <color name="tr_button4">#9c000000</color>
+
 
 </resources>
