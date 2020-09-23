@@ -50,6 +50,7 @@
 
     <string name="myadminpage2">Add Cake Details</string>
     <string name="savebutton">SAVE DETAILS</string>
+    <string name="view">VIEW</string>
 
 
 </resources>

@@ -18,13 +18,13 @@
         <activity android:name=".Payment" />
         <activity android:name=".Checkout" />
         <activity android:name=".Addtocart" />
-        <activity android:name=".feedback" />
-        <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".feedback" >           <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter></activity>
+        <activity android:name=".MainActivity">
+
         </activity>
 
         <meta-data
