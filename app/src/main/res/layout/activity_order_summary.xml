@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bakery_promotion_poster"
+    tools:context=".order_summary">
+
+    <TextView
+        android:id="@+id/textView43"
+        style="@android:style/Widget.FragmentBreadCrumbs"
+        android:layout_width="266dp"
+        android:layout_height="56dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="72dp"
+        tools:layout_editor_absoluteY="109dp"
+        tools:text="Order Summary" />
+
+    <Button
+        android:id="@+id/button24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="543dp"
+        tools:text="Ok" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        tools:layout_editor_absoluteX="97dp"
+        tools:layout_editor_absoluteY="195dp"
+        tools:text="cake" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        tools:layout_editor_absoluteX="99dp"
+        tools:layout_editor_absoluteY="279dp"
+        tools:text="weight" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        tools:layout_editor_absoluteX="97dp"
+        tools:layout_editor_absoluteY="363dp"
+        tools:text="wish" />
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date"
+        tools:layout_editor_absoluteX="97dp"
+        tools:layout_editor_absoluteY="452dp"
+        tools:text="date" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
