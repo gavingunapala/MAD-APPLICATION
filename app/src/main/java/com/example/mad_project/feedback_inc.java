@@ -2,7 +2,7 @@ package com.example.mad_project;
 
 public class feedback_inc {
     private String textml;
-    private String reating;
+    private float reating;
     private String mail;
 
     public feedback_inc() {
@@ -16,11 +16,11 @@ public class feedback_inc {
         this.textml = textml;
     }
 
-    public String getReating() {
+    public float getReating() {
         return reating;
     }
 
-    public void setReating(String reating) {
+    public void setReating(float reating) {
         this.reating = reating;
     }
 

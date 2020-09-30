@@ -115,12 +115,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
 
-    <TextureView
-        android:id="@+id/textureView2"
-        android:layout_width="0dp"
-        android:layout_height="562dp"
-        tools:layout_editor_absoluteX="473dp"
-        tools:layout_editor_absoluteY="593dp" />
+
 
     <FrameLayout
         android:layout_width="326dp"

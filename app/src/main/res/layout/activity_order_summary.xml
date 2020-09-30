@@ -20,7 +20,7 @@
         tools:text="Order Summary" />
 
     <Button
-        android:id="@+id/button24"
+        android:id="@+id/ok2Details"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Button"
@@ -33,42 +33,39 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:hint="cake"
         android:inputType="textPersonName"
-        android:text="Name"
         tools:layout_editor_absoluteX="97dp"
-        tools:layout_editor_absoluteY="195dp"
-        tools:text="cake" />
+        tools:layout_editor_absoluteY="195dp" />
 
     <EditText
         android:id="@+id/editTextTextPersonName22"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:hint="weight"
         android:inputType="textPersonName"
-        android:text="Name"
         tools:layout_editor_absoluteX="99dp"
-        tools:layout_editor_absoluteY="279dp"
-        tools:text="weight" />
+        tools:layout_editor_absoluteY="279dp" />
 
     <EditText
         android:id="@+id/editTextTextPersonName23"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:hint="wish"
         android:inputType="textPersonName"
-        android:text="Name"
         tools:layout_editor_absoluteX="97dp"
-        tools:layout_editor_absoluteY="363dp"
-        tools:text="wish" />
+        tools:layout_editor_absoluteY="363dp" />
 
     <EditText
         android:id="@+id/editTextDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:hint="date"
         android:inputType="date"
         tools:layout_editor_absoluteX="97dp"
-        tools:layout_editor_absoluteY="452dp"
-        tools:text="date" />
+        tools:layout_editor_absoluteY="452dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

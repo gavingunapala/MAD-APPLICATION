@@ -52,26 +52,5 @@
     <string name="savebutton">SAVE DETAILS</string>
     <string name="view">VIEW</string>
 
-    //Home page
-
-    <string-array name="cake_list">
-        <item>Special_Fondant_Cake</item>
-        <item>Unicorn_Cup_Cakes</item>
-        <item>Chocolate_Dripped_Cake</item>
-        <item>Ribbon_Cake</item>
-        <item>Anniversary_Cake</item>
-
-    </string-array>
-
-    <string-array name="description">
-        <item>Cakecology Cakes</item>
-        <item>Cakecology Cakes</item>
-        <item>Cakecology Cakes</item>
-        <item>Cakecology Cakes</item>
-        <item>Cakecology Cakes</item>
-
-    </string-array>
-
-
 
 </resources>
