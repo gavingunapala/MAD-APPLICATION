@@ -51,6 +51,10 @@
     <string name="myadminpage2">Add Cake Details</string>
     <string name="savebutton">SAVE DETAILS</string>
     <string name="view">VIEW</string>
+    <string name="myfeed">MY FEED</string>
+    <string name="mymail">MY MAIL</string>
+    <string name="myrating">MY RATINGS</string>
+    <string name="myfeedback">MY FEEDBACK</string>
 
 
 </resources>

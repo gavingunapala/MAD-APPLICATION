@@ -4,12 +4,14 @@ package com.example.mad_project;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RatingBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
@@ -20,7 +22,7 @@ import com.google.firebase.database.ValueEventListener;
 
 public class feedback extends AppCompatActivity {
 
-    Button view,delete,savedetails;
+    Button view,savedetails;
     RatingBar ratingBar;
     EditText multitext,Email;
     DatabaseReference dbref;
@@ -34,7 +36,6 @@ public class feedback extends AppCompatActivity {
         //Initialize.
         view= findViewById(R.id.viewfeed);
         savedetails= findViewById(R.id.submit);
-        delete = findViewById(R.id.deletefeed);
         multitext = findViewById(R.id.TextMultiLine);
         Email  = findViewById(R.id.EmailAddress);
         ratingBar = findViewById(R.id.ratingBar);
@@ -46,27 +47,20 @@ public class feedback extends AppCompatActivity {
         savedetails.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-              savedetails();
+                savedetails();
             }
         });
 
         //view detales on button click event
         view.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View view) {
-            showdetails();
-        }
-    });
-
-        delete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                deletedata();
+                showdetails();
             }
         });
 
 
-}
+    }
 
 
     public void savedetails(){
@@ -89,7 +83,7 @@ public class feedback extends AppCompatActivity {
 //                String a;
 //                a = Email.getText().toString();
 
-               dbref.child("value1").setValue(feed);
+                dbref.child("value1").setValue(feed);
                 dbref.push().setValue(feed);
 
                 //toast for success
@@ -101,68 +95,19 @@ public class feedback extends AppCompatActivity {
         }
     }
 
-    //show details from data base
+    //go to view details page
 
     public void showdetails() {
-       //get usrprofile name
-        String a;
-        a = Email.getText().toString();
-
-
-
-        DatabaseReference readdata = FirebaseDatabase.getInstance().getReference().child("feedback_inc").child("value1");
-        readdata.addListenerForSingleValueEvent(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                if(dataSnapshot.hasChildren()){
-                    multitext.setText(dataSnapshot.child("textml").getValue().toString());
-                    Email.setText(dataSnapshot.child("mail").getValue().toString());
-                    Toast.makeText(getApplicationContext(), "your rating is hidden cant show", Toast.LENGTH_SHORT).show();
-
-                }
-                else{
-                    Toast.makeText(getApplicationContext(), "no submitions", Toast.LENGTH_SHORT).show();
-                }
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
-
-            }
-        });
-    }
-
-    public void deletedata(){
-        DatabaseReference deletedata = FirebaseDatabase.getInstance().getReference().child("feedback_inc");
-        deletedata.addListenerForSingleValueEvent(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                if(dataSnapshot.hasChild("value1")){
-                    dbref=FirebaseDatabase.getInstance().getReference().child("feedback_inc").child("value1");
-                    dbref.removeValue();
-                    clearcontrols();
-                    Toast.makeText(getApplicationContext(), "deleted", Toast.LENGTH_SHORT).show();
-
-                }
-                else{
-                    Toast.makeText(getApplicationContext(), "not deleted", Toast.LENGTH_SHORT).show();
-                }
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
-
-            }
-        });
+        Intent i =  new Intent(this,view_feedbck.class);
+        startActivity(i);
 
     }
 
 
-
-
-private void clearcontrols(){
-    multitext.setText("");
-    Email.setText("");
-    ratingBar.setRating(0);
-}
+    //clear controls
+    private void clearcontrols(){
+        multitext.setText("");
+        Email.setText("");
+        ratingBar.setRating(0);
+    }
 }

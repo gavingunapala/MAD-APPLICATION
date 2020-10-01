@@ -68,7 +68,6 @@ public class signIn extends AppCompatActivity {
 //                dbref.child(String.valueOf(maxid+1)).setValue(sign);
 //                Toast.makeText(signIn.this, "Your account has been created", Toast.LENGTH_SHORT).show();
 
-
                 try {
                     if (TextUtils.isEmpty(txtName.getText().toString()))
                         Toast.makeText(getApplicationContext(), "You can not keep this field empty", Toast.LENGTH_SHORT).show();
@@ -78,8 +77,7 @@ public class signIn extends AppCompatActivity {
                         Toast.makeText(getApplicationContext(), "You can not keep this field empty", Toast.LENGTH_SHORT).show();
                     else if (TextUtils.isEmpty(txtRpw.getText()))
                         Toast.makeText(getApplicationContext(), "You can not keep this field empty", Toast.LENGTH_SHORT).show();
-
-                    else {
+                    else{
                         //send data
                         sign.setTxtName(txtName.getText().toString().trim());
                         sign.setTxtEmail(txtEmail.getText().toString().trim());
@@ -104,7 +102,7 @@ public class signIn extends AppCompatActivity {
 
     }
 
-//    public void createProfile(){
+    //    public void createProfile(){
 //
 //        try {
 //            if (TextUtils.isEmpty(txtName.getText().toString()))
