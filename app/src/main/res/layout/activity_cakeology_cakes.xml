@@ -4,161 +4,154 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CakeologyCakes">
+    tools:context=".cakeology_cakes">
 
-    <EditText
-        android:id="@+id/editTextTextPersonName18"
-        android:layout_width="81dp"
-        android:layout_height="52dp"
-        android:background="#FFFFFF"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/quantity"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        tools:layout_editor_absoluteX="229dp"
-        tools:layout_editor_absoluteY="310dp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-255dp">
 
-    <EditText
-        android:id="@+id/editTextTextPersonName19"
-        android:layout_width="179dp"
-        android:layout_height="51dp"
-        android:background="#FFFFFF"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Product Description"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        tools:layout_editor_absoluteX="6dp"
-        tools:layout_editor_absoluteY="600dp" />
 
-    <EditText
-        android:id="@+id/editTextTextPersonName20"
-        android:layout_width="402dp"
-        android:layout_height="66dp"
-        android:background="#FFFFFF"
-        android:ems="10"
-        android:fontFamily="@font/courgette"
-        android:inputType="textPersonName"
-        android:text="From one of the most loved Chocolate-Timtam......."
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        tools:layout_editor_absoluteX="6dp"
-        tools:layout_editor_absoluteY="635dp" />
+        <ImageView
+            android:id="@+id/mainImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="254dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="101dp"
+            android:layout_marginTop="74dp"
+            android:layout_marginEnd="109dp"
+            android:layout_marginBottom="403dp"
+            app:srcCompat="@drawable/special_fondant_cake" />
 
-    <EditText
-        android:id="@+id/editTextTextPersonName11"
-        android:layout_width="200dp"
-        android:layout_height="57dp"
-        android:background="#C1F18A"
-        android:ems="10"
-        android:fontFamily="@font/bilbo_swash_caps"
-        android:inputType="textPersonName"
-        android:text="  Cakeology Cakes"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="28dp" />
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="145dp"
+            android:layout_height="31dp"
+            android:layout_alignStart="@+id/title"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="159dp"
+            android:layout_marginBottom="312dp"
+            android:text="TextView"
+            android:textSize="16sp"
+            android:textStyle="italic" />
 
-    <ImageView
-        android:id="@+id/imageView30"
-        android:layout_width="211dp"
-        android:layout_height="206dp"
-        app:srcCompat="@drawable/cake1"
-        tools:layout_editor_absoluteX="-4dp"
-        tools:layout_editor_absoluteY="136dp" />
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="89dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="101dp"
+            android:layout_marginEnd="221dp"
+            android:layout_marginBottom="278dp"
+            android:text="TextView"
+            android:textColor="#AC9E9E"
+            android:textSize="18sp" />
 
-    <EditText
-        android:id="@+id/editTextTextPersonName14"
-        android:layout_width="210dp"
-        android:layout_height="52dp"
-        android:background="#FFFFFF"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Chocolate Dripped  Cake"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        tools:layout_editor_absoluteX="208dp"
-        tools:layout_editor_absoluteY="123dp" />
+        <TextView
+            android:id="@+id/weight"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/price"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="230dp"
+            android:layout_marginBottom="250dp"
+            android:text="Weight"
+            android:textColor="#504949" />
 
-    <EditText
-        android:id="@+id/editTextTextPersonName16"
-        android:layout_width="125dp"
-        android:layout_height="48dp"
-        android:background="#FFFFFF"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Rs. 1800"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        tools:layout_editor_absoluteX="229dp"
-        tools:layout_editor_absoluteY="190dp" />
+        <Button
+            android:id="@+id/cartBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="648dp"
+            android:layout_marginEnd="39dp"
+            android:layout_marginBottom="35dp"
+            android:hint="@string/cartButton"
 
-    <EditText
-        android:id="@+id/editTextTextPersonName17"
-        android:layout_width="103dp"
-        android:layout_height="46dp"
-        android:background="#FFFFFF"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="1 kg"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        tools:layout_editor_absoluteX="229dp"
-        tools:layout_editor_absoluteY="249dp" />
+            android:textColorHint="#050505" />
 
-    <RatingBar
-        android:id="@+id/ratingBar2"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        tools:layout_editor_absoluteX="354dp"
-        tools:layout_editor_absoluteY="190dp" />
+        <Button
+            android:id="@+id/buyBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="47dp"
+            android:layout_marginTop="647dp"
+            android:layout_marginEnd="242dp"
+            android:layout_marginBottom="36dp"
+            android:hint="@string/buyButton"
+            android:textColorHint="#050505" />
 
-    <TextView
-        android:id="@+id/textView34"
-        android:layout_width="133dp"
-        android:layout_height="42dp"
-        android:background="#CACDCF"
-        android:text="  -         +"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        tools:layout_editor_absoluteX="229dp"
-        tools:layout_editor_absoluteY="362dp" />
+        <EditText
+            android:id="@+id/quantity"
+            android:layout_width="200dp"
+            android:layout_height="47dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="99dp"
+            android:layout_marginTop="493dp"
+            android:layout_marginEnd="112dp"
+            android:layout_marginBottom="191dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="#373434"
+            android:textColorHighlight="#FFFFFF"
+            android:textColorHint="#655E5E" />
 
-    <ImageView
-        android:id="@+id/imageView31"
-        android:layout_width="121dp"
-        android:layout_height="102dp"
-        app:srcCompat="@drawable/img1"
-        tools:layout_editor_absoluteX="6dp"
-        tools:layout_editor_absoluteY="351dp" />
+        <EditText
+            android:id="@+id/greeting"
+            android:layout_width="348dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="548dp"
+            android:layout_marginEnd="19dp"
+            android:layout_marginBottom="123dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="#373434"
+            android:textColorHint="#655E5E" />
 
-    <ImageView
-        android:id="@+id/imageView32"
-        android:layout_width="102dp"
-        android:layout_height="101dp"
-        app:srcCompat="@drawable/omg2"
-        tools:layout_editor_absoluteX="106dp"
-        tools:layout_editor_absoluteY="351dp" />
+        <EditText
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="102dp"
+            android:layout_marginTop="333dp"
+            android:layout_marginEnd="96dp"
+            android:layout_marginBottom="348dp"
+            android:clickable="false"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name" />
 
-    <ImageView
-        android:id="@+id/imageView33"
-        android:layout_width="106dp"
-        android:layout_height="78dp"
-        app:srcCompat="@drawable/img3"
-        tools:layout_editor_absoluteX="6dp"
-        tools:layout_editor_absoluteY="460dp" />
+    </RelativeLayout>
 
-    <Button
-        android:id="@+id/button19"
-        android:layout_width="128dp"
-        android:layout_height="43dp"
-        android:background="#1D7C7171"
-        android:text="@string/addtocartbutton"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        tools:layout_editor_absoluteX="59dp"
-        tools:layout_editor_absoluteY="538dp" />
-
-    <Button
-        android:id="@+id/button20"
-        android:layout_width="128dp"
-        android:layout_height="43dp"
-        android:background="#ACE46A"
-        android:text="@string/buybutton"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        tools:layout_editor_absoluteX="226dp"
-        tools:layout_editor_absoluteY="538dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -87,7 +87,7 @@ public class UserProfile extends AppCompatActivity {
     }
 
     public void openActivityhome(){
-        Intent i =  new Intent(this,Home.class);
+        Intent i =  new Intent(this,home.class);
         startActivity(i);
     }
 }

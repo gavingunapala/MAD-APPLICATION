@@ -4,139 +4,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FAF6F6"
-    tools:context=".Home">
+    tools:context=".home">
 
-    <EditText
-        android:id="@+id/editTextTextPersonName9"
-        style="@android:style/Widget.Holo.AutoCompleteTextView"
-        android:layout_width="191dp"
-        android:layout_height="49dp"
-        android:background="#FAF8F8"
-        android:ems="10"
-        android:fontFamily="@font/bilbo_swash_caps"
-        android:inputType="textPersonName"
-        android:text="@string/topic"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        tools:layout_editor_absoluteX="125dp"
-        tools:layout_editor_absoluteY="189dp" />
-
-    <ImageView
-        android:id="@+id/imageView25"
-        android:layout_width="381dp"
-        android:layout_height="183dp"
-        app:srcCompat="@drawable/coverpic"
-        tools:layout_editor_absoluteX="15dp"
-        tools:layout_editor_absoluteY="6dp" />
-
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="377dp"
-        android:layout_height="39dp"
-        android:visibility="visible"
-        tools:layout_editor_absoluteX="18dp"
-        tools:layout_editor_absoluteY="238dp"
-        tools:visibility="visible" />
-
-    <TextView
-        android:id="@+id/textView33"
-        android:layout_width="87dp"
-        android:layout_height="22dp"
-        android:text="@string/dropdowntoselect"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        tools:layout_editor_absoluteX="31dp"
-        tools:layout_editor_absoluteY="247dp" />
-
-    <ImageView
-        android:id="@+id/imageView24"
-        android:layout_width="171dp"
-        android:layout_height="151dp"
-        app:srcCompat="@drawable/cake1"
-        tools:layout_editor_absoluteX="18dp"
-        tools:layout_editor_absoluteY="307dp" />
-
-    <ImageView
-        android:id="@+id/imageView26"
-        android:layout_width="177dp"
-        android:layout_height="151dp"
-        app:srcCompat="@drawable/cake2"
-        tools:layout_editor_absoluteX="225dp"
-        tools:layout_editor_absoluteY="307dp" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName8"
-        android:layout_width="198dp"
-        android:layout_height="40dp"
-        android:background="#FAF2F2"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Chocolate Dripped Cake"
-        tools:layout_editor_absoluteX="18dp"
-        tools:layout_editor_absoluteY="467dp" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName12"
-        android:layout_width="174dp"
-        android:layout_height="42dp"
-        android:background="#FAF2F2"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Princess Cake"
-        tools:layout_editor_absoluteX="228dp"
-        tools:layout_editor_absoluteY="467dp" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName10"
-        android:layout_width="210dp"
-        android:layout_height="53dp"
-        android:background="#FAF2F2"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Rs. 1800"
-        tools:layout_editor_absoluteX="18dp"
-        tools:layout_editor_absoluteY="507dp" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName13"
-        android:layout_width="210dp"
-        android:layout_height="53dp"
-        android:background="#FAF2F2"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Rs. 2000"
-        tools:layout_editor_absoluteX="216dp"
-        tools:layout_editor_absoluteY="509dp" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="408dp"
+        android:layout_height="670dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
-        android:id="@+id/button13"
-        android:layout_width="117dp"
-        android:layout_height="41dp"
-        android:text="@string/addtocart"
-        tools:layout_editor_absoluteX="88dp"
-        tools:layout_editor_absoluteY="509dp" />
+        android:id="@+id/cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="13dp"
+        android:text="cart"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.996"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button18"
-        android:layout_width="115dp"
-        android:layout_height="40dp"
-        android:text="Add to Cart"
-        tools:layout_editor_absoluteX="287dp"
-        tools:layout_editor_absoluteY="509dp" />
-
-    <ImageView
-        android:id="@+id/imageView27"
-        android:layout_width="177dp"
-        android:layout_height="151dp"
-        app:srcCompat="@drawable/cake3"
-        tools:layout_editor_absoluteX="18dp"
-        tools:layout_editor_absoluteY="569dp" />
-
-    <ImageView
-        android:id="@+id/imageView28"
-        android:layout_width="177dp"
-        android:layout_height="151dp"
-        app:srcCompat="@drawable/cake4"
-        tools:layout_editor_absoluteX="228dp"
-        tools:layout_editor_absoluteY="569dp" />
-
+        android:id="@+id/profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="243dp"
+        android:layout_marginBottom="13dp"
+        android:text="profile"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerView"
+        app:layout_constraintEnd_toStartOf="@+id/cart"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

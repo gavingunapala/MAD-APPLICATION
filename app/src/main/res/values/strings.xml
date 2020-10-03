@@ -56,6 +56,58 @@
     <string name="myrating">MY RATINGS</string>
     <string name="myfeedback">MY FEEDBACK</string>
     <string name="ratings">Ratings</string>
+    <string name="cartButton">Add To Cart</string>
+    <string name="buyButton">Buy Now</string>
+
+    //home page
+
+    <string-array name="cake_list">
+        <item>Special_Fondant_Cake</item>
+        <item>Rose_Cupcakes</item>
+        <item>Butter_Cream_Cake</item>
+        <item>Chocolate_Dripped_Cake</item>
+        <item>Ribbon_Cake</item>
+        <item>Unicorn_Cup_Cakes</item>
+        <item>Butterscotch_Cake</item>
+        <item>Anniversary_Cake</item>
+
+    </string-array>
+
+    <string-array name="description">
+        <item>Cakecology Cakes</item>
+        <item>Cakecology Cakes</item>
+        <item>Cakecology Cakes</item>
+        <item>Cakecology Cakes</item>
+        <item>Cakecology Cakes</item>
+        <item>Cakecology Cakes</item>
+        <item>Cakecology Cakes</item>
+        <item>Cakecology Cakes</item>
+
+    </string-array>
+
+    <string-array name="price_list">
+        <item>1000</item>
+        <item>2000</item>
+        <item>3000</item>
+        <item>4000</item>
+        <item>5000</item>
+        <item>6000</item>
+        <item>7000</item>
+        <item>8000</item>
+
+
+    </string-array>
+
+    <string-array name="weight_list">
+        <item>1kg</item>
+        <item>2kg</item>
+        <item>3kg</item>
+        <item>4kg</item>
+        <item>5kg</item>
+        <item>5kg</item>
+        <item>5kg</item>
+        <item>5kg</item>
+    </string-array>
 
 
 </resources>
