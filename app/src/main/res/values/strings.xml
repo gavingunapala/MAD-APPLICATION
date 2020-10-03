@@ -55,6 +55,7 @@
     <string name="mymail">MY MAIL</string>
     <string name="myrating">MY RATINGS</string>
     <string name="myfeedback">MY FEEDBACK</string>
+    <string name="ratings">Ratings</string>
 
 
 </resources>

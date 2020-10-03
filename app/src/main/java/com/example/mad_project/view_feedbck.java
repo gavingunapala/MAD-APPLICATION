@@ -3,6 +3,7 @@ package com.example.mad_project;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -14,10 +15,12 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
 public class view_feedbck extends AppCompatActivity {
-    Button delete;
+    Button delete,mailok;
+    EditText entermail;
     TextView multitext,Email,rating;
     DatabaseReference dbref;
     feedback_inc feed;
@@ -32,32 +35,54 @@ public class view_feedbck extends AppCompatActivity {
         rating = findViewById(R.id.viewRatings);
         feed = new feedback_inc();
         delete = findViewById(R.id.deketefeedback);
-
+        mailok = findViewById(R.id.mailok);
+        entermail= findViewById(R.id.entermail);
 
 
 
 // view feedback
-
-        DatabaseReference readdata = FirebaseDatabase.getInstance().getReference().child("feedback_inc").child("value1");
-        readdata.addListenerForSingleValueEvent(new ValueEventListener() {
+        mailok.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                if(dataSnapshot.hasChildren()){
-                    multitext.setText(dataSnapshot.child("textml").getValue().toString());
-                    Email.setText(dataSnapshot.child("mail").getValue().toString());
-                    rating.setText(dataSnapshot.child("reating").getValue().toString());
+            public void onClick(View view) {
 
-                }
-                else{
-                    Toast.makeText(getApplicationContext(), "no submitions", Toast.LENGTH_SHORT).show();
-                }
-            }
+                final String userEnteredemail = entermail.getText().toString().trim();
 
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
+                DatabaseReference reference = FirebaseDatabase.getInstance().getReference().child("feedback_inc");
 
+                Query checkUser = reference.orderByChild("mail").equalTo(userEnteredemail);
+                checkUser.addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                        if (dataSnapshot.exists()) {
+                            DatabaseReference readdata = FirebaseDatabase.getInstance().getReference().child("feedback_inc").child(userEnteredemail);
+                            readdata.addListenerForSingleValueEvent(new ValueEventListener() {
+                                @Override
+                                public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                                    if(dataSnapshot.hasChildren()){
+                                        multitext.setText(dataSnapshot.child("textml").getValue().toString());
+                                        Email.setText(dataSnapshot.child("mail").getValue().toString());
+                                        rating.setText(dataSnapshot.child("reating").getValue().toString());
+                                    }
+                                    else{
+                                        Toast.makeText(getApplicationContext(), "no submission", Toast.LENGTH_SHORT).show();
+                                    }
+                                }
+                                @Override
+                                public void onCancelled(@NonNull DatabaseError databaseError) {
+                                }
+                            });
+                        }else{
+                            Toast.makeText(getApplicationContext(), "No submission or wrong Email.", Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                    }
+                });
             }
         });
+
 
         //delete feedback button click
 
@@ -68,22 +93,22 @@ public class view_feedbck extends AppCompatActivity {
             }
         });
 
-
     }
 
     //delete feed code
     public void deletefeed(){
+        final String userEnteredemail = entermail.getText().toString().trim();
         dbref = FirebaseDatabase.getInstance().getReference().child("feedback_inc");
 
         DatabaseReference deletedata = FirebaseDatabase.getInstance().getReference().child("feedback_inc");
         deletedata.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                if(dataSnapshot.hasChild("value1")){
-                    dbref=FirebaseDatabase.getInstance().getReference().child("feedback_inc").child("value1");
+                if(dataSnapshot.hasChild(userEnteredemail)){
+                    dbref=FirebaseDatabase.getInstance().getReference().child("feedback_inc").child(userEnteredemail);
                     dbref.removeValue();
                     clearcontrols();
-                    Toast.makeText(getApplicationContext(), "deleted", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "deleted successfully ", Toast.LENGTH_SHORT).show();
 
                 }
                 else{

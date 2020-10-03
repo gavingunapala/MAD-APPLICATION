@@ -23,7 +23,7 @@ public class signIn extends AppCompatActivity {
     Button button11,btnCancel, btnhome;
     DatabaseReference dbref;
     signin_inc sign;
-    long maxid = 0;
+//    long maxid = 0;
 
 
     @Override
@@ -44,29 +44,25 @@ public class signIn extends AppCompatActivity {
 
         dbref = FirebaseDatabase.getInstance().getReference().child("signin_inc");
 
-        dbref.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                if (snapshot.exists())
-                    maxid = (snapshot.getChildrenCount());
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
-            }
-        });
+//        dbref.addValueEventListener(new ValueEventListener() {
+//            @Override
+//            public void onDataChange(@NonNull DataSnapshot snapshot) {
+//                if (snapshot.exists())
+//                    maxid = (snapshot.getChildrenCount());
+//            }
+//
+//            @Override
+//            public void onCancelled(@NonNull DatabaseError error) {
+//
+//            }
+//        });
 
 
         button11.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                sign.setTxtName(txtName.getText().toString().trim());
-//                sign.setTxtEmail(txtEmail.getText().toString().trim());
-//                sign.setTxtPw(txtPw.getText().toString().trim());
-//
-//                dbref.child(String.valueOf(maxid+1)).setValue(sign);
-//                Toast.makeText(signIn.this, "Your account has been created", Toast.LENGTH_SHORT).show();
+                String a;
+
 
                 try {
                     if (TextUtils.isEmpty(txtName.getText().toString()))
@@ -83,7 +79,9 @@ public class signIn extends AppCompatActivity {
                         sign.setTxtEmail(txtEmail.getText().toString().trim());
                         sign.setTxtPw(txtPw.getText().toString().trim());
 
-                        dbref.child(String.valueOf(maxid+1)).setValue(sign);
+                        a = txtName.getText().toString();
+
+                        dbref.child(String.valueOf(a)).setValue(sign);
 
 
                         Toast.makeText(getApplicationContext(), "Your account has been created", Toast.LENGTH_SHORT).show();

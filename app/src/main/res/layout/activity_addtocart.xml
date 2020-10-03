@@ -4,9 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#3C2E2E"
+    android:paddingTop="100dp"
     tools:context=".Addtocart">
 
     <androidx.recyclerview.widget.RecyclerView
+
         android:id="@+id/myrecycleview"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

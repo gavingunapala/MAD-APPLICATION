@@ -42,6 +42,7 @@ public class Addtocart extends AppCompatActivity {
             protected void populateViewHolder(addtocartViewHolder addtocartViewHolder, addtocart_inc addtocart_inc, int i) {
                 addtocartViewHolder.setQuentity(addtocart_inc.getQauntity());
                 addtocartViewHolder.setTitle(addtocart_inc.getCakename());
+                addtocartViewHolder.setPrice(addtocart_inc.getPrice());
 
 
 
@@ -64,6 +65,11 @@ public class Addtocart extends AppCompatActivity {
             TextView Quentity = (TextView)mView.findViewById(R.id.quentity123);
             Quentity.setText(quen);
         }
+        public void setPrice(String p){
+            TextView price = (TextView)mView.findViewById(R.id.price);
+            price.setText(p);
+        }
+
 
     }
 

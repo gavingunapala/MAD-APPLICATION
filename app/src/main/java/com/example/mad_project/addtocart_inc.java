@@ -1,14 +1,28 @@
 package com.example.mad_project;
 
 public class addtocart_inc {
-    String cakename;
-    String quentity="abc";
+    String cakename,quentity,price;
 
+    public String getQuentity() {
+        return quentity;
+    }
 
+    public void setQuentity(String quentity) {
+        this.quentity = quentity;
+    }
 
-    public addtocart_inc(String cakename, String quentity) {
+    public String getPrice() {
+        return price;
+    }
+
+    public void setPrice(String price) {
+        this.price = price;
+    }
+
+    public addtocart_inc(String cakename, String quentity, String price) {
         this.cakename = cakename;
         this.quentity = quentity;
+        this.price = price;
     }
 
     public String getCakename() {
@@ -24,7 +38,7 @@ public class addtocart_inc {
         return quentity;
     }
 
-    public void setquentity(String quentity) {
+    public void setQauntity(String quentity) {
         this.quentity = quentity;
     }
     public addtocart_inc(){}

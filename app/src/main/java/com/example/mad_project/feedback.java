@@ -18,6 +18,7 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
 public class feedback extends AppCompatActivity {
@@ -27,6 +28,7 @@ public class feedback extends AppCompatActivity {
     EditText multitext,Email;
     DatabaseReference dbref;
     feedback_inc feed;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,10 +65,21 @@ public class feedback extends AppCompatActivity {
     }
 
 
-    public void savedetails(){
-        dbref = FirebaseDatabase.getInstance().getReference().child("feedback_inc");
+      public void savedetails(){
+          final String userEnteredEmail = Email.getText().toString().trim();
 
-        try {
+          DatabaseReference reference = FirebaseDatabase.getInstance().getReference().child("feedback_inc");
+          dbref = FirebaseDatabase.getInstance().getReference().child("feedback_inc");
+
+          Query checkUser = reference.orderByChild("mail").equalTo(userEnteredEmail);
+          checkUser.addListenerForSingleValueEvent(new ValueEventListener() {
+              @Override
+              public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                  if (dataSnapshot.exists()) {
+                      Toast.makeText(getApplicationContext(), "already added feedback click view button to see", Toast.LENGTH_SHORT).show();
+
+                  }else{
+                      try {
             if (TextUtils.isEmpty(multitext.getText().toString()))
                 Toast.makeText(getApplicationContext(), "please write your feedback", Toast.LENGTH_SHORT).show();
             else if (TextUtils.isEmpty(Email.getText()))
@@ -80,32 +93,37 @@ public class feedback extends AppCompatActivity {
 
 
                 //insert
-//                String a;
-//                a = Email.getText().toString();
-
-                dbref.child("value1").setValue(feed);
-                dbref.push().setValue(feed);
-
+                String a;
+                a = Email.getText().toString();
+                dbref.child(a).setValue(feed);
                 //toast for success
                 Toast.makeText(getApplicationContext(), "Data saved", Toast.LENGTH_SHORT).show();
+                a=("");
                 clearcontrols();
             }
         }catch (Exception e){
             Toast.makeText(getApplicationContext(), "Data not saved", Toast.LENGTH_SHORT).show();
         }
+                  }
+              }
+              @Override
+              public void onCancelled(@NonNull DatabaseError databaseError) {
+
+              }
+          });
     }
 
-    //go to view details page
 
+    //go to view details page
     public void showdetails() {
         Intent i =  new Intent(this,view_feedbck.class);
         startActivity(i);
-
     }
 
 
     //clear controls
     private void clearcontrols(){
+
         multitext.setText("");
         Email.setText("");
         ratingBar.setRating(0);

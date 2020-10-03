@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //Initialize.
-        Uname = findViewById(R.id.username_enter);
+        Uname = findViewById(R.id.usernameforenter);
         Password = findViewById(R.id.passwordforlogin);
         createAccount = findViewById(R.id.create_account);
         login = findViewById(R.id.login_button);
@@ -62,6 +62,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void openlogin() {
+
         final String userEnteredUsername = Uname.getText().toString().trim();
         final String userEnteredPassword = Password.getText().toString().trim();
 
@@ -72,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 if (dataSnapshot.exists()) {
-                    String passwordFromDB = dataSnapshot.child("3").child("txtPw").getValue(String.class);
+                    String passwordFromDB = dataSnapshot.child(userEnteredUsername).child("txtPw").getValue(String.class);
 
 
                     if (passwordFromDB.equals(userEnteredPassword)) {
