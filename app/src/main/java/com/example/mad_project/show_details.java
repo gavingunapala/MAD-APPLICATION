@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
@@ -18,8 +19,8 @@ import com.google.firebase.database.ValueEventListener;
 
 public class show_details extends AppCompatActivity {
 
-    EditText a,b,c,d;
-    Button shBtn;
+    TextView a,b,c,d;
+    Button updateBtn;
     DatabaseReference dbRef;
 
     @Override
@@ -27,15 +28,18 @@ public class show_details extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_show_details);
 
-        a = (EditText)findViewById(R.id.nameView);
-        b = (EditText)findViewById(R.id.quantityView);
-        c = (EditText)findViewById(R.id.greetingView);
-        d = (EditText)findViewById(R.id.candlesView);
-        shBtn = (Button)findViewById(R.id.showBtn);
+        a = (TextView) findViewById(R.id.nameView);
+        b = (TextView) findViewById(R.id.quantityView);
+        c = (TextView) findViewById(R.id.greetingView);
+        d = (TextView) findViewById(R.id.candlesView);
+        updateBtn =findViewById(R.id.updateBtn);
 
         final String abc;
         Intent i = getIntent();
         abc=i.getStringExtra("cakenameforshow");
+
+        Intent intent  = new Intent(show_details.this,cakeology_cakes.class);
+        startActivity(intent);
 
 
 
