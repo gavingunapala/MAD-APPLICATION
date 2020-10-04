@@ -44,6 +44,17 @@ public class feedback extends AppCompatActivity {
         feed = new feedback_inc();
 
 
+        //update data retrive
+
+        final String msg1,msg2;
+
+        Intent i = getIntent();
+        msg1 =i.getStringExtra("msg1");
+        msg2 = i.getStringExtra("msg2");
+        Email.setText(msg1);
+        multitext.setText(msg2);
+
+
 
         //save to data base buitton click event
         savedetails.setOnClickListener(new View.OnClickListener() {

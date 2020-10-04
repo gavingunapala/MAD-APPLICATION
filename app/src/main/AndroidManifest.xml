@@ -2,35 +2,38 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.mad_project">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".view_feedbck">
-
-        </activity>
-        <activity android:name=".Home" />
-        <activity android:name=".order_summary" />
-        <activity android:name=".add_more_details" />
-        <activity android:name=".CakeologyCakes" />
-        <activity android:name=".AddDetails" />
-        <activity android:name=".AddItems" />
-        <activity android:name=".signIn"></activity>
-        <activity android:name=".UserProfile" />
-        <activity android:name=".Payment" />
-        <activity android:name=".Checkout" />
-        <activity android:name=".Addtocart" ></activity>
-        <activity android:name=".feedback" ></activity>
-        <activity android:name=".MainActivity" >
+        <activity android:name=".splashscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
+        </activity>
+        <activity android:name=".show_details" /><activity
+            android:name=".cakeology_cakes"
+            android:label="Details"
+            android:parentActivityName=".home" />
+        <activity android:name=".home" />
+        <activity android:name=".view_feedbck" />
+        <activity android:name=".order_summary" />
+        <activity android:name=".add_more_details" />
+        <activity android:name=".AddDetails" />
+        <activity android:name=".AddItems" />
+        <activity android:name=".signIn" />
+        <activity android:name=".UserProfile" />
+        <activity android:name=".Payment" />
+        <activity android:name=".Checkout" />
+        <activity android:name=".Addtocart" />
+        <activity android:name=".feedback" />
+        <activity android:name=".MainActivity">
 
         </activity>
 

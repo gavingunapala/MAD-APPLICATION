@@ -66,6 +66,7 @@ public class MainActivity extends AppCompatActivity {
         final String userEnteredUsername = Uname.getText().toString().trim();
         final String userEnteredPassword = Password.getText().toString().trim();
 
+
         DatabaseReference reference = FirebaseDatabase.getInstance().getReference().child("signin_inc");
 
         Query checkUser = reference.orderByChild("txtName").equalTo(userEnteredUsername);
@@ -78,16 +79,21 @@ public class MainActivity extends AppCompatActivity {
 
                     if (passwordFromDB.equals(userEnteredPassword)) {
                         Toast.makeText(getApplicationContext(), "valied user", Toast.LENGTH_SHORT).show();
-                        Intent intent = new Intent(getApplicationContext(), UserProfile.class);
+                        Intent intent = new Intent(MainActivity.this, UserProfile.class);
+                        intent.putExtra("user",Uname.getText().toString());
                         startActivity(intent);
+                        finish();
+
 
                     } else {
-                        Toast.makeText(getApplicationContext(), "wrong password", Toast.LENGTH_SHORT).show();
+                        Password.setError("Invalid Password");
+//                        Toast.makeText(getApplicationContext(), "wrong password", Toast.LENGTH_SHORT).show();
                         return;
                     }
 
                 }else{
-                    Toast.makeText(getApplicationContext(), "No such User exist", Toast.LENGTH_SHORT).show();
+                    Password.setError("Invalid Username");
+//                    Toast.makeText(getApplicationContext(), "No such User exist", Toast.LENGTH_SHORT).show();
                 }
             }
             @Override

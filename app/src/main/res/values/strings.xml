@@ -1,5 +1,6 @@
 <resources>
-    <string name="app_name">MAD-PROJECT</string>
+    <string name="app_name">cakeology</string>
+
 
     //login
     <string name="username">USERNAME</string>
@@ -56,6 +57,67 @@
     <string name="myrating">MY RATINGS</string>
     <string name="myfeedback">MY FEEDBACK</string>
     <string name="ratings">Ratings</string>
+    <string name="feedback">ADD FEEDBACK</string>
+    <string name="userprofile">USER PROFILE</string>
+    <string name="cartbutton">CART</string>
+    <string name="bubutton">BUY NOW</string>
+    <string name="buttonshow">Show Button</string>
+    <string name="upd">Update</string>
+    <string name="hintz_cd">Add number candles</string>
+    <string name="hint_gt">Add icing greeting to this cake</string>
+    <string name="hint_qty">Quantity</string>
+    <string name="cartB">Add To Cart</string>
+    <string name="loginback">BACK TO LOGIN</string>
+
+    //home page
+
+    <string-array name="cake_list">
+        <item>Special Fondant Cake</item>
+        <item>Fancy Sugar Cup Cakes</item>
+        <item>Raspberry-Puree Sponge Cake</item>
+        <item>Chocolate Strawberry Rum Sponge</item>
+        <item>Rainbow Ribbon Cake</item>
+        <item>Unicorn Cup Cakes</item>
+        <item>Butterscotch Cake</item>
+        <item>Anniversary Heart Cake</item>
+
+    </string-array>
+
+    <string-array name="description">
+        <item>Spread the love with decadent buttercream filling and is frosted with fondant icing for a perfect, smooth look. Black polka twist around the base of the cake and pop out of the top</item>
+        <item>Moist vanilla cupcakes topped with a strawberry and cream cheese frosting</item>
+        <item>This stunning Raspberry Rose Cake features layers of soft vanilla sponge cake filled with delicious raspberry puree and butter cream that melts in your mouth.</item>
+        <item>Chocolate sponge cake sandwiched with Parline Cream, Rum, Strawberry Pulp and coated with Chocolate Ganache.</item>
+        <item>Cakecology Cakes</item>
+        <item>Cakecology Cakes</item>
+        <item>Cakecology Cakes</item>
+        <item>One of the best pick for a wedding, engagement, or anniversary celebrations! This heart-shaped ribbon cake looks so elegant at the same time it will fill up your heart with the taste!</item>
+
+    </string-array>
+
+    <string-array name="price_list">
+        <item>Rs.3,750</item>
+        <item>2000</item>
+        <item>3000</item>
+        <item>4000</item>
+        <item>5000</item>
+        <item>6000</item>
+        <item>7000</item>
+        <item>8000</item>
+
+
+    </string-array>
+
+    <string-array name="weight_list">
+        <item>1kg</item>
+        <item>2kg</item>
+        <item>3kg</item>
+        <item>4kg</item>
+        <item>5kg</item>
+        <item>5kg</item>
+        <item>5kg</item>
+        <item>5kg</item>
+    </string-array>
 
 
 </resources>

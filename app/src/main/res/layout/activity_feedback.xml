@@ -150,6 +150,7 @@
     <EditText
         android:id="@+id/TextMultiLine"
         android:layout_width="353dp"
+        android:paddingLeft="5dp"
         android:layout_height="103dp"
         android:background="@drawable/feedback_textview_custom"
         android:layout_marginTop="388dp"

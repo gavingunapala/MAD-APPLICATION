@@ -19,7 +19,7 @@ import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
 public class view_feedbck extends AppCompatActivity {
-    Button delete,mailok;
+    Button delete,mailok,update;
     EditText entermail;
     TextView multitext,Email,rating;
     DatabaseReference dbref;
@@ -37,6 +37,22 @@ public class view_feedbck extends AppCompatActivity {
         delete = findViewById(R.id.deketefeedback);
         mailok = findViewById(R.id.mailok);
         entermail= findViewById(R.id.entermail);
+        update= findViewById(R.id.updatefeed);
+
+        //update button click
+
+        update.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String userEnteredemail = entermail.getText().toString().trim();
+                Intent i = new Intent(view_feedbck.this,feedback.class);
+                i.putExtra("msg1",userEnteredemail);
+                i.putExtra("msg2",multitext.getText().toString());
+                startActivity(i);
+
+            }
+        });
+
 
 
 
