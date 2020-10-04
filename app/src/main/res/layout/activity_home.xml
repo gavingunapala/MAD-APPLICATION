@@ -8,34 +8,146 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
-        android:layout_width="408dp"
-        android:layout_height="670dp"
+        android:layout_width="414dp"
+        android:layout_height="594dp"
+        android:background="#FDFDFB"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.25" />
 
     <Button
         android:id="@+id/cart"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
         android:layout_marginBottom="13dp"
-        android:text="cart"
-        app:layout_constraintBottom_toTopOf="@+id/recyclerView"
+        android:background="@drawable/cart"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.996"
+        app:layout_constraintHorizontal_bias="0.955"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024" />
 
     <Button
         android:id="@+id/profile"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="243dp"
+        android:layout_width="82dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="260dp"
         android:layout_marginBottom="13dp"
-        android:text="profile"
-        app:layout_constraintBottom_toTopOf="@+id/recyclerView"
+        android:background="#FAF9F6"
+        android:fontFamily="@font/open_sans_italic"
+        android:text="Profile"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/cart"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="420dp"
+        android:layout_height="133dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/header" />
+
+    <TextView
+        android:id="@+id/home"
+        android:layout_width="103dp"
+        android:layout_height="53dp"
+        android:fontFamily="@font/aladin"
+        android:text="Home"
+        android:textColor="#050505"
+        android:textSize="33sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.577"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <HorizontalScrollView
+        android:layout_width="408dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.997"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.965">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/scrButton1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/custom_white_button"
+                android:fontFamily="@font/open_sans_bold_italic"
+                android:text="Birthday"
+                android:textSize="12dp" />
+
+            <Button
+                android:id="@+id/scrButton2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/custom_white_button"
+                android:fontFamily="@font/open_sans_bold_italic"
+                android:text="Cup Cakes"
+                android:textSize="12dp" />
+
+            <Button
+                android:id="@+id/scrButton3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/custom_white_button"
+                android:fontFamily="@font/open_sans_bold_italic"
+                android:text="Chocolate"
+                android:textSize="12dp" />
+
+            <Button
+                android:id="@+id/scrButton6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/custom_white_button"
+                android:fontFamily="@font/open_sans_bold_italic"
+                android:text="Gateau"
+                android:textSize="12dp" />
+
+            <Button
+                android:id="@+id/scrButton4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/custom_white_button"
+                android:fontFamily="@font/open_sans_bold_italic"
+                android:text="Anniversary"
+                android:textSize="12dp" />
+
+            <Button
+                android:id="@+id/scrButton5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/custom_white_button"
+                android:fontFamily="@font/open_sans_bold_italic"
+                android:text="Butterscotch"
+                android:textSize="12dp" />
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,10 +2,10 @@
 <shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
     <stroke android:color="#000000" android:width="4dp"/>
     <gradient
-        android:startColor="@color/tr_button2"
-        android:endColor="#fff"
+        android:startColor="#ffff00"
+        android:endColor="#ffff00"
         android:angle="135 "
         />
-    <corners android:radius="3dp"/>
+    <corners android:radius="20dp"/>
 
 </shape>

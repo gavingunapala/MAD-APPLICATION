@@ -9,10 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".cakeology_cakes"
-            android:parentActivityName=".home"
-            android:label="Details"/>
-        <activity android:name=".home" >
+        <activity android:name=".show_details"></activity>
+        <activity
+            android:name=".cakeology_cakes"
+            android:label="Details"
+            android:parentActivityName=".home" />
+        <activity android:name=".home">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -30,8 +32,7 @@
         <activity android:name=".Checkout" />
         <activity android:name=".Addtocart" />
         <activity android:name=".feedback" />
-        <activity android:name=".MainActivity"/>
-
+        <activity android:name=".MainActivity" />
 
         <meta-data
             android:name="preloaded_fonts"

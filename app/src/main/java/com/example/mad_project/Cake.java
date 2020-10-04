@@ -5,6 +5,7 @@ public class Cake {
     private Integer cake_quantity;
     private String cake_greeting;
     private String cake_name;
+    private String cake_candles;
 
     public Cake() {
     }
@@ -31,5 +32,13 @@ public class Cake {
 
     public void setCake_greeting(String cake_greeting) {
         this.cake_greeting = cake_greeting;
+    }
+
+    public String getCake_candles() {
+        return cake_candles;
+    }
+
+    public void setCake_candles(String cake_candles) {
+        this.cake_candles = cake_candles;
     }
 }

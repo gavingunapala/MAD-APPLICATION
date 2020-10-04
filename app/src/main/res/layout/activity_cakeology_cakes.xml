@@ -9,6 +9,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#F6F5F5"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="-255dp">
 
@@ -16,57 +17,59 @@
         <ImageView
             android:id="@+id/mainImageView"
             android:layout_width="wrap_content"
-            android:layout_height="254dp"
+            android:layout_height="216dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="101dp"
+            android:layout_marginStart="105dp"
             android:layout_marginTop="74dp"
-            android:layout_marginEnd="109dp"
-            android:layout_marginBottom="403dp"
+            android:layout_marginEnd="104dp"
+            android:layout_marginBottom="441dp"
             app:srcCompat="@drawable/special_fondant_cake" />
 
         <TextView
             android:id="@+id/description"
-            android:layout_width="145dp"
-            android:layout_height="31dp"
-            android:layout_alignStart="@+id/title"
+            android:layout_width="340dp"
+            android:layout_height="53dp"
+            android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="0dp"
-            android:layout_marginEnd="159dp"
-            android:layout_marginBottom="312dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="23dp"
+            android:layout_marginBottom="327dp"
             android:text="TextView"
-            android:textSize="16sp"
+            android:textColor="#4A4444"
+            android:textSize="14sp"
             android:textStyle="italic" />
 
         <TextView
             android:id="@+id/price"
-            android:layout_width="89dp"
-            android:layout_height="wrap_content"
+            android:layout_width="110dp"
+            android:layout_height="38dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="101dp"
-            android:layout_marginEnd="221dp"
-            android:layout_marginBottom="278dp"
+            android:layout_marginStart="43dp"
+            android:layout_marginEnd="258dp"
+            android:layout_marginBottom="276dp"
             android:text="TextView"
-            android:textColor="#AC9E9E"
+            android:textColor="#151414"
             android:textSize="18sp" />
 
         <TextView
             android:id="@+id/weight"
-            android:layout_width="75dp"
-            android:layout_height="wrap_content"
+            android:layout_width="111dp"
+            android:layout_height="38dp"
             android:layout_alignStart="@+id/price"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="0dp"
-            android:layout_marginEnd="230dp"
-            android:layout_marginBottom="250dp"
+            android:layout_marginStart="199dp"
+            android:layout_marginEnd="53dp"
+            android:layout_marginBottom="277dp"
             android:text="Weight"
-            android:textColor="#504949" />
+            android:textColor="#151414"
+            android:textSize="18sp" />
 
         <Button
             android:id="@+id/cartBtn"
@@ -76,28 +79,15 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="250dp"
-            android:layout_marginTop="648dp"
-            android:layout_marginEnd="39dp"
-            android:layout_marginBottom="35dp"
+            android:layout_marginStart="137dp"
+            android:layout_marginTop="661dp"
+            android:layout_marginEnd="151dp"
+            android:layout_marginBottom="22dp"
+            android:background="#E86B6B"
             android:hint="@string/cartButton"
-
-            android:textColorHint="#050505" />
-
-        <Button
-            android:id="@+id/buyBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="47dp"
-            android:layout_marginTop="647dp"
-            android:layout_marginEnd="242dp"
-            android:layout_marginBottom="36dp"
-            android:hint="@string/buyButton"
-            android:textColorHint="#050505" />
+            android:textColorHint="#050505"
+            android:textSize="18sp"
+            android:textStyle="normal" />
 
         <EditText
             android:id="@+id/quantity"
@@ -107,13 +97,14 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="99dp"
-            android:layout_marginTop="493dp"
-            android:layout_marginEnd="112dp"
-            android:layout_marginBottom="191dp"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="455dp"
+            android:layout_marginEnd="168dp"
+            android:layout_marginBottom="228dp"
             android:ems="10"
+            android:hint="@string/hint_quantity"
             android:inputType="textPersonName"
-            android:textColor="#373434"
+            android:textColor="#1C1B1B"
             android:textColorHighlight="#FFFFFF"
             android:textColorHint="#655E5E" />
 
@@ -125,13 +116,15 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="44dp"
-            android:layout_marginTop="548dp"
-            android:layout_marginEnd="19dp"
-            android:layout_marginBottom="123dp"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="513dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="158dp"
             android:ems="10"
+            android:hint="@string/hint_greeting"
             android:inputType="textPersonName"
-            android:textColor="#373434"
+            android:textColor="#1C1B1B"
+            android:textColorHighlight="#FFFFFF"
             android:textColorHint="#655E5E" />
 
         <EditText
@@ -142,14 +135,53 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="102dp"
-            android:layout_marginTop="333dp"
-            android:layout_marginEnd="96dp"
-            android:layout_marginBottom="348dp"
-            android:clickable="false"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="301dp"
+            android:layout_marginEnd="98dp"
+            android:layout_marginBottom="380dp"
             android:ems="10"
+            android:fontFamily="@font/abhaya_libre"
             android:inputType="textPersonName"
-            android:text="Name" />
+            android:text="Name"
+            android:textColor="#2038BD"
+            android:textSize="24sp"
+            android:textStyle="bold|italic" />
+
+        <EditText
+            android:id="@+id/candles"
+            android:layout_width="318dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="587dp"
+            android:layout_marginEnd="49dp"
+            android:layout_marginBottom="93dp"
+            android:ems="10"
+            android:hint="@string/addCandles"
+            android:inputType="textPersonName"
+            android:textColor="#1C1B1B"
+            android:textColorHint="#655E5E" />
+
+        <TextView
+            android:id="@+id/pageTitle"
+            android:layout_width="197dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="126dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="87dp"
+            android:layout_marginBottom="662dp"
+            android:fontFamily="@font/aladin"
+            android:text="Cakeology Cakes"
+            android:textColor="#050505"
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
     </RelativeLayout>
 

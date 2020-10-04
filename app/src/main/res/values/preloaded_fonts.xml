@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <array name="preloaded_fonts" translatable="false">
+        <item>@font/abhaya_libre</item>
+        <item>@font/aclonica</item>
         <item>@font/akronim</item>
+        <item>@font/allerta</item>
         <item>@font/bilbo_swash_caps</item>
         <item>@font/courgette</item>
     </array>

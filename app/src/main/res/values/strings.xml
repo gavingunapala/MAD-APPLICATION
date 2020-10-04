@@ -58,55 +58,64 @@
     <string name="ratings">Ratings</string>
     <string name="cartButton">Add To Cart</string>
     <string name="buyButton">Buy Now</string>
+    <string name="hint_quantity">Quantity</string>
+    <string name="hint_greeting">Add icing greeting to this cake (Rs.100)</string>
+    <string name="hint_candles">Add number candles</string>
+    <string name="updateButton">Update</string>
+    <string name="showButton">Show</string>
+    <string name="updButton">Update</string>
+    <string name="updB">Update</string>
+    <string name="hintForCandles">Add  number candles</string>
+    <string name="addCandles">Add number candles (Rs.100)</string>
 
     //home page
 
     <string-array name="cake_list">
-        <item>Special_Fondant_Cake</item>
-        <item>Rose_Cupcakes</item>
-        <item>Butter_Cream_Cake</item>
-        <item>Chocolate_Dripped_Cake</item>
-        <item>Ribbon_Cake</item>
-        <item>Unicorn_Cup_Cakes</item>
-        <item>Butterscotch_Cake</item>
-        <item>Anniversary_Cake</item>
+        <item>Special Fondant Cake</item>
+        <item>Fancy Sugar Cup Cakes</item>
+        <item>Raspberry-Puree Sponge Cake</item>
+        <item>Chocolate Strawberry Rum Sponge</item>
+        <item>Rainbow Ribbon Cake</item>
+        <item>Unicorn Cup Cakes</item>
+        <item>Butterscotch Cake</item>
+        <item>Anniversary Red Velvet Cake</item>
 
     </string-array>
 
     <string-array name="description">
-        <item>Cakecology Cakes</item>
-        <item>Cakecology Cakes</item>
-        <item>Cakecology Cakes</item>
-        <item>Cakecology Cakes</item>
-        <item>Cakecology Cakes</item>
-        <item>Cakecology Cakes</item>
-        <item>Cakecology Cakes</item>
-        <item>Cakecology Cakes</item>
+        <item>Spread the love with decadent buttercream filling and is frosted with fondant icing for a perfect, smooth look. Black polka twist around the base of the cake and pop out of the top.</item>
+        <item>Moist vanilla cupcakes topped with a strawberry and cream cheese frosting. (12 pcs)</item>
+        <item>This stunning Raspberry Rose Cake features layers of soft vanilla sponge cake filled with delicious raspberry puree and butter cream that melts in your mouth.</item>
+        <item>Chocolate sponge cake sandwiched with Praline Cream, Rum, Strawberry Pulp and coated with Chocolate Ganache.</item>
+        <item>Indulge your sweet temptations with our very own Rainbow Ribbon Signature Cake.</item>
+        <item>Celebrate it with unicorn! Our moist chocolate and vanilla cupcakes topped with unicorn. (12 pcs)</item>
+        <item>This flavourful cake comes with tempting layers of cream and topped with salted butterscotch.</item>
+        <item>One of the best pick for a wedding, engagement, or anniversary celebrations! This heart-shaped ribbon cake looks so elegant at the same time it will fill up your heart with the taste!</item>
 
     </string-array>
 
     <string-array name="price_list">
-        <item>1000</item>
-        <item>2000</item>
-        <item>3000</item>
-        <item>4000</item>
-        <item>5000</item>
-        <item>6000</item>
-        <item>7000</item>
-        <item>8000</item>
+        <item>Rs.3,750</item>
+        <item>Rs.1,250</item>
+        <item>Rs.2,850</item>
+        <item>Rs.3,000</item>
+        <item>Rs.2,500</item>
+        <item>Rs.1,500</item>
+        <item>Rs.2,000</item>
+        <item>Rs.3,200</item>
 
 
     </string-array>
 
     <string-array name="weight_list">
-        <item>1kg</item>
-        <item>2kg</item>
         <item>3kg</item>
-        <item>4kg</item>
-        <item>5kg</item>
-        <item>5kg</item>
-        <item>5kg</item>
-        <item>5kg</item>
+        <item>500g</item>
+        <item>3.2kg</item>
+        <item>2.5kg</item>
+        <item>1.5kg</item>
+        <item>500g</item>
+        <item>2kg</item>
+        <item>2.8kg</item>
     </string-array>
 
 

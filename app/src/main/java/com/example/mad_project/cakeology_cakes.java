@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.VisibleForTesting;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -23,7 +24,7 @@ public class cakeology_cakes extends AppCompatActivity {
 
     ImageView mainImageView;
     TextView  description, price, weight;
-    EditText title,quantity, greeting;
+    EditText title,quantity, greeting, candles;
     Button cartBtn;
     DatabaseReference dbRef;
     Cake cake;
@@ -46,6 +47,7 @@ public class cakeology_cakes extends AppCompatActivity {
 
         quantity = (EditText) findViewById(R.id.quantity);
         greeting = (EditText) findViewById(R.id.greeting);
+        candles = (EditText) findViewById(R.id.candles);
         cartBtn = (Button) findViewById(R.id.cartBtn);
         cake = new Cake();
 
@@ -78,10 +80,15 @@ public class cakeology_cakes extends AppCompatActivity {
                 cake.setCake_name(data1);
                 cake.setCake_quantity(qty);
                 cake.setCake_greeting(greeting.getText().toString().trim());
+                cake.setCake_candles(candles.getText().toString().trim());
+
 
                 dbRef.child(String.valueOf(id)).setValue(cake);
 
                 Toast.makeText(cakeology_cakes.this, "Successfully Inserted", Toast.LENGTH_LONG).show();
+                Intent i = new Intent(cakeology_cakes.this,show_details.class);
+                i.putExtra("cakenameforshow",id);
+                startActivity(i);
             }
         });
     }
